@@ -112,7 +112,7 @@ GUIText:
   m_Text: 
   m_Anchor: 0
   m_Alignment: 1
-  m_PixelOffset: {x: 10, y: 350}
+  m_PixelOffset: {x: 1300, y: 400}
   m_LineSpacing: 1
   m_TabSize: 4
   m_Font: {fileID: 0}
@@ -135,7 +135,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
 --- !u!1001 &580966789
 Prefab:
   m_ObjectHideFlags: 0
@@ -173,7 +173,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 426444, guid: 54a08ec9e550d154f82df887b488102e, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2318220, guid: 54a08ec9e550d154f82df887b488102e, type: 2}
       propertyPath: m_Materials.Array.data[0]
@@ -226,7 +226,7 @@ GUIText:
   m_Text: 
   m_Anchor: 0
   m_Alignment: 1
-  m_PixelOffset: {x: 600, y: 350}
+  m_PixelOffset: {x: 10, y: 400}
   m_LineSpacing: 1
   m_TabSize: 4
   m_Font: {fileID: 0}
@@ -249,7 +249,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
 --- !u!1001 &1025263904
 Prefab:
   m_ObjectHideFlags: 0
@@ -335,7 +335,7 @@ GUIText:
   m_Text: 
   m_Anchor: 0
   m_Alignment: 1
-  m_PixelOffset: {x: 600, y: 300}
+  m_PixelOffset: {x: 1300, y: 350}
   m_LineSpacing: 1
   m_TabSize: 4
   m_Font: {fileID: 0}
@@ -386,7 +386,7 @@ GUIText:
   m_Text: 
   m_Anchor: 0
   m_Alignment: 1
-  m_PixelOffset: {x: 10, y: 300}
+  m_PixelOffset: {x: 10, y: 350}
   m_LineSpacing: 1
   m_TabSize: 4
   m_Font: {fileID: 0}
@@ -653,8 +653,6 @@ GameObject:
   - 92: {fileID: 1846803391}
   - 124: {fileID: 1846803390}
   - 81: {fileID: 1846803389}
-  - 114: {fileID: 1846803395}
-  - 114: {fileID: 1846803394}
   - 114: {fileID: 1846803397}
   - 114: {fileID: 1846803396}
   m_Layer: 0
@@ -731,32 +729,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!114 &1846803394
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1846803388}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07d50311294195641bad04f7a3a747e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pontos01: {fileID: 1407562954}
-  BandeiraP1: {fileID: 165614, guid: 841b0517df6d634428c279a2e24a4595, type: 2}
---- !u!114 &1846803395
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1846803388}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9846c789733a8754e8eb30e70338c98c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pontos02: {fileID: 1153698318}
-  BandeiraP2: {fileID: 108866, guid: 3743fa3ea9a6b0f4d9ab6db1fb5312b4, type: 2}
 --- !u!114 &1846803396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -768,6 +740,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6c8ef1917aa0c247b6168f6356c9d1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  staminaP2: {fileID: 494494859}
 --- !u!114 &1846803397
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -779,6 +752,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55c4d259a823edb4580cd356bf40555c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  staminaP1: {fileID: 1024381967}
 --- !u!1001 &2061625420
 Prefab:
   m_ObjectHideFlags: 0
@@ -857,3 +831,31 @@ MonoBehaviour:
   ForcaPlayer2: 0
   staminaPlayer1: 0
   staminaPlayer2: 0
+--- !u!114 &2061625427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2061625421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9846c789733a8754e8eb30e70338c98c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pontos02: {fileID: 1153698318}
+  Player1: {fileID: 156940, guid: 026c6008a279acb4ba0147628493f7db, type: 2}
+  ColisorBandeira: {fileID: 0}
+--- !u!114 &2061625428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2061625421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07d50311294195641bad04f7a3a747e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pontos01: {fileID: 1407562954}
+  Player1: {fileID: 156940, guid: 026c6008a279acb4ba0147628493f7db, type: 2}
+  ColisorBandeira: {fileID: 0}

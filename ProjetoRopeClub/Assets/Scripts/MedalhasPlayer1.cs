@@ -7,22 +7,16 @@ public class MedalhasPlayer1 : MonoBehaviour {
 
 	int medalhasDoJogador1;
 	public GUIText pontos01 = null;
-	public GameObject BandeiraP1;
+	public GameObject Player1;
 	// Use this for initialization
 	void Start () {
-	
+		medalhasDoJogador1 = 0;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		medalhasDoJogador1 = 0;
+		
 		pontos01.text = "MedalhasPlayer1: " + Convert.ToString (medalhasDoJogador1);
-
-		if (BandeiraP1.transform.position.x <= 0) 
-		{
-			medalhasDoJogador1++;
-		}
-
-	
+		// colisão da bandeira com o colisor para pontuar
 	}
 }
